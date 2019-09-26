@@ -10,8 +10,9 @@ export class FriendsListService {
     {
       id: 1,
       img: '/assets/image/lev.jpg',
-      name: 'Лапин Александр Альбертович',
+      name: 'Лапин Александр',
       city: 'Тольятти',
+      online: 'Online',
       phone: '7-495-674-34-69',
       email: 'newbird26@example.com',
       interest: [
@@ -30,7 +31,332 @@ export class FriendsListService {
     {
       id: 2,
       img: '/assets/image/blackCat.jpg',
-      name: 'Самсонов Сергей Владиславович',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 3,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 4,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: 'Online',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 5,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 6,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: 'Online',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 7,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
+      city: 'Тольятти',
+      phone: '7-495-693-15-94',
+      email: 'newkoala48@example.com',
+      interest: [
+        {
+          id: 1,
+          name: "музыка"
+        }, {
+          id: 3,
+          name: 'радио'
+        }
+      ]
+    },
+    {
+      id: 8,
+      img: '/assets/image/blackCat.jpg',
+      name: 'Самсонов Сергей',
+      online: '',
       city: 'Тольятти',
       phone: '7-495-693-15-94',
       email: 'newkoala48@example.com',

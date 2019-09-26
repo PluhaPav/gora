@@ -3,5 +3,6 @@ import { Attribute } from '@angular/core';
 
 export interface MyEventTarget extends EventTarget {
     classList: MyClassList;
-    getAttribute(stting): null | string | '';
+    closest(DOMString): Element | null;
+    getAttribute(DOMString): null | string | '';
 }

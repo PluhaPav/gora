@@ -1,5 +1,5 @@
 import { MyEventTarget } from './my-event-target';
 
-export interface MyTabsEvent extends Event{
+export interface MyEvent extends Event{
     target: MyEventTarget;
 }

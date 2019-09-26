@@ -1,3 +1,24 @@
 <section class="contain" data-id="friends">
-
+    <div *ngIf="friendsArray" class="friends">
+        <div *ngFor="let friend of friendsArray" class="friend">
+            <div class="friend__column">
+                <div class="friend__img">
+                    <img src="{{friend.img}}" alt="">
+                </div>
+            </div>
+            <div class="friend__column">
+                <div class="header">
+                    <div class="friend__name">
+                        <h3>{{friend.name}}</h3>
+                    </div>
+                    <div class="friend__city">
+                        {{friend.city}}
+                    </div>
+                </div>
+                <div *ngIf="friend.online" class="body">
+                    <div class="friend__online">{{friend.online}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

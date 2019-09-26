@@ -7,9 +7,9 @@
             Добавить в друзья
         </div>
     </div>
-    <div class="contain__column">
+    <div class="contain__column" (click)="clickWrite($event)">
         <div class="header">
-            <div class="header__name">
+            <div class="header__name changed">
                 <h1 *ngIf="!write">{{profile.name}}</h1>
                 <input *ngIf="write" name="name" type="text" value="{{profile.name}}">
             </div>
@@ -28,7 +28,7 @@
                 <div class="title">
                     <b>Телефон</b>
                 </div>
-                <div class="text">
+                <div class="text changed">
                     <div *ngIf="!write">{{profile.phone}}</div>
                     <input *ngIf="write" name="phone" type="text" value="{{profile.phone}}">
                 </div>
@@ -37,18 +37,18 @@
                 <div class="title">
                     <b>E-mail</b>
                 </div>
-                <div class="text">
+                <div class="text changed">
                     <div *ngIf="!write">{{profile.email}}</div>
                     <input *ngIf="write" name="email" type="text" value="{{profile.email}}">
                 </div>
             </div>
         </div>
-        <div class="interest">
+        <div class="interest" (click)="clickDeleteInterest($event)">
             <div class="title">
                 <b>Интересы</b>
             </div>
             <div class="interest__list">
-                <div *ngFor="let interest of interests" data-id="{{interest.id}}" class="interest__block">
+                <div *ngFor="let interest of interests" attr.data-id="{{interest.id}}" class="interest__block">
                     {{interest.name}}
                 </div>
             </div>

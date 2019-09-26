@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FriendsListService } from 'src/app/service/friends/friends-list.service';
+import { FriendsList } from 'src/app/interfaces/friends-list';
 
 @Component({
   selector: 'app-friends',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FriendsComponent implements OnInit {
 
-  constructor() { }
+  public friendsArray: FriendsList[];
+
+  constructor(private friendsList:FriendsListService) { }
 
   ngOnInit() {
+    this.friendsArray = this.friendsList.getFriendsList;
   }
 
 }

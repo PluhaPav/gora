@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MyTabsEvent } from 'src/app/interfaces/my-tabs-event';
+import { MyEvent } from 'src/app/interfaces/my-event';
 import { TabsService } from 'src/app/service/tabs/tabs.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class TabsComponent implements OnInit {
   ngOnInit() {
   }
 
-  public clickTab(event: MyTabsEvent) {
+  public clickTab(event: MyEvent) {
     let hasClassActive = event.target.classList.contains('tab--active');
     if (!hasClassActive) {
       let tabs = document.querySelectorAll('.tab');

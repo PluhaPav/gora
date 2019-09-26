@@ -2,12 +2,21 @@
     display: flex;
     border: 1px solid;
     border-radius: 0px 5px 5px 5px;
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+    }
     &__column {
         padding: 10px;
         .header {
             padding-bottom: 20px;
             &__name {
                 h1 {
+                    margin: 5px 0px;
+                    cursor: pointer;
+                }
+                input {
+                    font-size: 1.5em;
+                    min-height: 21px;
                     margin: 5px 0px;
                 }
             }
@@ -19,11 +28,14 @@
                 display: flex;
                 padding: 5px 0;
                 width: 100%;
+                min-height: 21px;
                 .title {
                     min-width: 160px;
+                    cursor: pointer;
                 }
                 .text {
                     width: 100%;
+                    cursor: pointer;
                 }
             }
         }
@@ -55,6 +67,9 @@
         cursor: pointer;
     }
     &__img {
+        @media screen and (max-width: 500px) {
+            text-align: center;
+        }
         img {
             border-radius: 5px;
         }
