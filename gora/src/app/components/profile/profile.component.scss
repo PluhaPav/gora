@@ -18,8 +18,12 @@
             &__line {
                 display: flex;
                 padding: 5px 0;
+                width: 100%;
                 .title {
-                    min-width: 200px;
+                    min-width: 160px;
+                }
+                .text {
+                    width: 100%;
                 }
             }
         }
