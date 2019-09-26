@@ -23,6 +23,22 @@
                 }
             }
         }
+        .interest {
+            padding-top: 20px;
+            &__list {
+                display: flex;
+            }
+            &__block {
+                padding: 5px 10px;
+                border: 1px solid #bdbcbc;
+                border-radius: 5px;
+                margin: 5px 5px 0 0;
+                cursor: pointer;
+                &:hover {
+                    background: #f3f3f3;
+                }
+            }
+        }
     }
     &__button {
         padding: 10px 5px;

@@ -36,6 +36,16 @@
                 <div class="text">vitalya@gora.ru</div>
             </div>
         </div>
+        <div class="interest">
+            <div class="title">
+                <b>Интересы</b>
+            </div>
+            <div class="interest__list">
+                <div *ngFor="let interest of interests" class="interest__block">
+                    {{interest.name}}
+                </div>
+            </div>
+        </div>
 
     </div>
 </section>
