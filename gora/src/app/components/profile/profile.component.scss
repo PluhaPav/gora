@@ -1,0 +1,42 @@
+.contain {
+    display: flex;
+    border: 1px solid;
+    border-radius: 0px 5px 5px 5px;
+    &__column {
+        padding: 10px;
+        .header {
+            padding-bottom: 20px;
+            &__name {
+                h1 {
+                    margin: 5px 0px;
+                }
+            }
+        }
+        .body {
+            display: flex;
+            flex-direction: column;
+            &__line {
+                display: flex;
+                padding: 5px 0;
+                .title {
+                    min-width: 200px;
+                }
+            }
+        }
+    }
+    &__button {
+        padding: 10px 5px;
+        font-size: 12px;
+        background: linear-gradient(#e78101 20%, #e35700);
+        text-align: center;
+        color: #fff;
+        margin-top: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &__img {
+        img {
+            border-radius: 5px;
+        }
+    }
+}

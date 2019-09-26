@@ -1,0 +1,36 @@
+:host {
+    width: 100%;
+}
+
+.tabs {
+    position: absolute;
+    display: flex;
+    height: 30px;
+    width: 100%;
+    .tab {
+        background: linear-gradient(#0286b7 20%, #1d6cb1);
+        margin-right: 10px;
+        padding: 6px 15px;
+        border-radius: 5px 5px 0px 0px;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 900;
+        &--active {
+            position: relative;
+            background: #fff;
+            color: #000;
+            border: 1px solid;
+            border-bottom: 1px solid #fff;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                left: 0;
+                z-index: 2;
+            }
+        }
+    }
+}
