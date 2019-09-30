@@ -11,7 +11,7 @@
         <div class="header">
             <div class="header__name changed">
                 <h1 *ngIf="!write">{{profile.name}}</h1>
-                <input *ngIf="write" name="name" type="text" value="{{profile.name}}">
+                <input *ngIf="write" [(ngModel)]="profile.name" name="name" type="text" value="{{profile.name}}">
             </div>
             <div class="header__city">
                 <span>{{profile.city}}</span>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="text changed">
                     <div *ngIf="!write">{{profile.phone}}</div>
-                    <input *ngIf="write" name="phone" type="text" value="{{profile.phone}}">
+                    <input *ngIf="write" [(ngModel)]="profile.phone" name="phone" type="text" value="{{profile.phone}}">
                 </div>
             </div>
             <div class="body__line">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="text changed">
                     <div *ngIf="!write">{{profile.email}}</div>
-                    <input *ngIf="write" name="email" type="text" value="{{profile.email}}">
+                    <input *ngIf="write" [(ngModel)]="profile.email" name="email" type="text" value="{{profile.email}}">
                 </div>
             </div>
         </div>

@@ -45,6 +45,7 @@ export class ProfileComponent implements OnInit {
       this.write = true;
     } else {
       this.write = false;
+      this.profileService.setProfile(this.profile);
     }
   }
 }

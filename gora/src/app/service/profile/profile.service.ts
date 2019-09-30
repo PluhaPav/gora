@@ -36,15 +36,20 @@ export class ProfileService {
   constructor() { }
 
   get getProfile(): FriendsList {
-    return this.profile;
+    let localProfile: FriendsList | null = JSON.parse(window.localStorage.getItem('profile'));
+    if (localProfile !== null) {
+      return localProfile;
+    } else {
+
+      return this.profile;
+    }
   }
 
   get getInteresArray(): Interest[] {
     return this.interests;
   }
 
-  setProfile(key: string, value: string): void {
-    this.profile[key] = value;
-    console.log(this.profile);
+  setProfile(profileObject: FriendsList): void {
+    window.localStorage.setItem('profile', JSON.stringify(profileObject));
   }
 }
