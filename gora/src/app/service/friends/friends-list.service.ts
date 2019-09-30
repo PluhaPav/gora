@@ -10,7 +10,7 @@ export class FriendsListService {
     {
       id: 1,
       img: '/assets/image/lev.jpg',
-      name: 'Лапин Александр',
+      name: 'Анатолий Лев Головачев',
       city: 'Тольятти',
       online: 'Online',
       phone: '7-495-674-34-69',
@@ -31,7 +31,7 @@ export class FriendsListService {
     {
       id: 2,
       img: '/assets/image/blackCat.jpg',
-      name: 'Самсонов Сергей',
+      name: 'Денис Черный Гаязов',
       online: '',
       city: 'Тольятти',
       phone: '7-495-693-15-94',

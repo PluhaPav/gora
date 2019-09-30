@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Interest } from 'src/app/interfaces/interest';
 import { MyEvent } from 'src/app/interfaces/my-event';
 import { FriendsList } from 'src/app/interfaces/friends-list';
+import { ProfileService } from 'src/app/service/profile/profile.service';
 
 @Component({
   selector: 'app-profile',
@@ -10,36 +11,16 @@ import { FriendsList } from 'src/app/interfaces/friends-list';
 })
 export class ProfileComponent implements OnInit {
 
-  public interests: Interest[] = [
-    {
-      id: 1,
-      name: 'Музыка'
-    },
-    {
-      id: 2,
-      name: 'Компьютеры'
-    },
-    {
-      id: 3,
-      name: 'Радио'
-    }
-  ];
-
-  public profile: FriendsList = {
-    id: 1,
-    img: '/assets/image/gora.jpg',
-    name: 'Виталя Гора',
-    online: '',
-    city: 'г. Нижние Шахты',
-    phone: '+7 (440) 554-32-12',
-    email: 'vitalya@gora.ru',
-    interest: this.interests
-  };
+  public interests: Interest[];
+  public profile: FriendsList;
   private deleteId: number;
   public write: boolean = false;
-  constructor() { }
+
+  constructor(private profileService: ProfileService) { }
 
   ngOnInit() {
+    this.profile = this.profileService.getProfile;
+    this.interests = this.profile.interest;
   }
 
   private deleteInterestArray(id: number): void {

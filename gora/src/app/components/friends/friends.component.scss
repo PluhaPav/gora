@@ -10,7 +10,7 @@
         overflow-y: scroll;
         height: 248px;
         @media screen and (max-width: 500px) {
-            height: 100vh;
+            height: calc(100vh - 50px);
         }
         &::-webkit-scrollbar {
             width: 5px;
