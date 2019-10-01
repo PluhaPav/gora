@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { Interest } from 'src/app/interfaces/interest';
 import { MyEvent } from 'src/app/interfaces/my-event';
 import { FriendsList } from 'src/app/interfaces/friends-list';
@@ -9,7 +9,7 @@ import { ProfileService } from 'src/app/service/profile/profile.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent implements OnInit, DoCheck {
 
   public interests: Interest[];
   public profile: FriendsList;
@@ -55,5 +55,10 @@ export class ProfileComponent implements OnInit {
 
   clickAddInterest() {
     this.visibleAddInterface = !this.visibleAddInterface;
- }
+  }
+
+  ngDoCheck(): void {
+    this.profile = this.profileService.getProfile;
+    this.interests = this.profile.interest;
+  }
 }

@@ -69,7 +69,6 @@ export class ProfileService {
     let localProfile = JSON.parse(window.localStorage.getItem('profile'));
     window.localStorage.removeItem('profile');
     localProfile.interest = this.interests;
-    console.log(this.profile);
-    window.localStorage.setItem('profile', JSON.stringify(this.profile));
+    window.localStorage.setItem('profile', JSON.stringify(localProfile));
   }
 }

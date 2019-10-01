@@ -8,7 +8,7 @@ import { ProfileService } from 'src/app/service/profile/profile.service';
 })
 export class AddInterestComponent implements OnInit {
 
-  public interestAddName: string;
+  public interestAddName: string = '';
 
   constructor(private profileService: ProfileService) { }
 
@@ -20,5 +20,4 @@ export class AddInterestComponent implements OnInit {
       this.profileService.setInterest(this.interestAddName);
     }
   }
-
 }
