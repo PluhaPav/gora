@@ -29,6 +29,8 @@ export class ProfileComponent implements OnInit, DoCheck {
       itemInterest => itemInterest.id === id
     );
     this.interests.splice(indexDelet, 1);
+    this.profile.interest = this.interests;
+    this.profileService.setProfile(this.profile);
     this.deleteId = null;
   }
 
@@ -58,7 +60,6 @@ export class ProfileComponent implements OnInit, DoCheck {
   }
 
   ngDoCheck(): void {
-    this.profile = this.profileService.getProfile;
-    this.interests = this.profile.interest;
+    this.interests = this.profileService.getInteresArray;
   }
 }

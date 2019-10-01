@@ -38,9 +38,9 @@ export class ProfileService {
   get getProfile(): FriendsList {
     let localProfile: FriendsList | null = JSON.parse(window.localStorage.getItem('profile'));
     if (localProfile !== null) {
+      this.interests = localProfile.interest;
       return localProfile;
     } else {
-
       return this.profile;
     }
   }
