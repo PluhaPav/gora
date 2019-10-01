@@ -1,0 +1,30 @@
+.interest {
+    &__formBlock {
+        margin-top: 10px;
+        input[type="text"] {
+            padding: 5px;
+            &.ng-invalid {
+                border: 1px solid red;
+            }
+        }
+        .interest__form {
+            &.ng-invalid {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__submit {
+        padding: 5px 10px;
+        border: 1px solid #bdbcbc;
+        border-radius: 5px;
+        margin: 0px 5px;
+        cursor: pointer;
+    }
+    &-invalid {
+        position: absolute;
+        padding: 5px 0px;
+        color: red;
+        font-weight: 700;
+        font-size: 12px;
+    }
+}

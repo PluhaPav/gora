@@ -8,6 +8,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { FriendsComponent } from './components/friends/friends.component';
 import { SectionsComponent } from './components/sections/sections.component';
 import { FormsModule } from '@angular/forms';
+import { AddInterestComponent } from './components/add-interest/add-interest.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     TabsComponent,
     ProfileComponent,
     FriendsComponent,
-    SectionsComponent
+    SectionsComponent,
+    AddInterestComponent
   ],
   imports: [
     BrowserModule,

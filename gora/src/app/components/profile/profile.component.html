@@ -51,8 +51,9 @@
                 <div *ngFor="let interest of interests" attr.data-id="{{interest.id}}" class="interest__block">
                     {{interest.name}}
                 </div>
+                <div [ngClass]="visibleAddInterface ? 'interest__add--hide' : 'interest__add--show'" class="interest__add" (click)="clickAddInterest()"></div>
             </div>
         </div>
-
+        <app-add-interest *ngIf="visibleAddInterface"></app-add-interest>
     </div>
 </section>

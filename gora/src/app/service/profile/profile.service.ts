@@ -46,10 +46,30 @@ export class ProfileService {
   }
 
   get getInteresArray(): Interest[] {
-    return this.interests;
+    let localInterest: FriendsList | null = JSON.parse(window.localStorage.getItem('profile'));
+    if (localInterest !== null) {
+      return localInterest.interest;
+    } else {
+      return this.profile.interest;
+    }
   }
 
   setProfile(profileObject: FriendsList): void {
     window.localStorage.setItem('profile', JSON.stringify(profileObject));
+  }
+
+  setInterest(interest: string): void {
+    let countInterest: number = this.interests.length + 1;
+    this.interests.unshift(
+      {
+        id: countInterest,
+        name: interest
+      }
+    );
+    let localProfile = JSON.parse(window.localStorage.getItem('profile'));
+    window.localStorage.removeItem('profile');
+    localProfile.interest = this.interests;
+    console.log(this.profile);
+    window.localStorage.setItem('profile', JSON.stringify(this.profile));
   }
 }

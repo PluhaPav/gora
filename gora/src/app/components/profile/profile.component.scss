@@ -1,3 +1,11 @@
+%interest-block {
+    padding: 5px 10px;
+    border: 1px solid #bdbcbc;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
 .contain {
     display: flex;
     border: 1px solid;
@@ -43,15 +51,32 @@
             padding-top: 20px;
             &__list {
                 display: flex;
+                flex-wrap: wrap;
             }
             &__block {
-                padding: 5px 10px;
-                border: 1px solid #bdbcbc;
-                border-radius: 5px;
-                margin: 5px 5px 0 0;
-                cursor: pointer;
+                @extend %interest-block;
                 &:hover {
                     background: #f3f3f3;
+                }
+            }
+            &__add {
+                @extend %interest-block;
+                font-weight: 900;
+                &--hide {
+                    padding: 5px 11px;
+                    &::before {
+                        content: '-';
+                    }
+                }
+                &--show {
+                    &::before {
+                        content: '+';
+                    }
+                }
+                &:hover {
+                    background: #00da2f;
+                    border: 1px solid #00da2f;
+                    color: #fff;
                 }
             }
         }

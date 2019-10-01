@@ -1,0 +1,9 @@
+<div class="interest__formBlock">
+    <form class="interest__form">
+        <input type="text" name="interest" [(ngModel)]="interestAddName" #interest="ngModel" required pattern="[A-Za-zА-Яа-яЁё]{3,}" placeholder="Интерес">
+        <div [hidden]="interest.valid || interest.untouched" class="interest-invalid">
+            Ошибка валидации
+        </div>
+        <button (click)="clickAddInterest()" class="interest__submit">Добавить</button>
+    </form>
+</div>

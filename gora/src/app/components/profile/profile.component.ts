@@ -15,6 +15,7 @@ export class ProfileComponent implements OnInit {
   public profile: FriendsList;
   private deleteId: number;
   public write: boolean = false;
+  public visibleAddInterface: boolean = false;
 
   constructor(private profileService: ProfileService) { }
 
@@ -32,10 +33,13 @@ export class ProfileComponent implements OnInit {
   }
 
   public clickDeleteInterest(event: MyEvent) {
-    let dataLink = Number.parseInt(event.target.getAttribute('data-id'));
-    this.deleteId = dataLink;
-    if (this.deleteId !== null || this.deleteId !== undefined) {
-      this.deleteInterestArray(this.deleteId);
+    let hasClass = event.target.classList.contains('interest__block');
+    if (hasClass) {
+      let dataLink = Number.parseInt(event.target.getAttribute('data-id'));
+      this.deleteId = dataLink;
+      if (this.deleteId !== null || this.deleteId !== undefined) {
+        this.deleteInterestArray(this.deleteId);
+      }
     }
   }
 
@@ -48,4 +52,8 @@ export class ProfileComponent implements OnInit {
       this.profileService.setProfile(this.profile);
     }
   }
+
+  clickAddInterest() {
+    this.visibleAddInterface = !this.visibleAddInterface;
+ }
 }
