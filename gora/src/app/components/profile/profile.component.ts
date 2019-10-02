@@ -41,6 +41,7 @@ export class ProfileComponent implements OnInit, DoCheck {
       this.deleteId = dataLink;
       if (this.deleteId !== null || this.deleteId !== undefined) {
         this.deleteInterestArray(this.deleteId);
+        this.profileService.setProfile(this.profile);
       }
     }
   }

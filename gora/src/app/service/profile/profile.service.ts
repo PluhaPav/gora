@@ -59,16 +59,15 @@ export class ProfileService {
   }
 
   setInterest(interest: string): void {
-    let countInterest: number = this.interests.length + 1;
-    this.interests.unshift(
+    let localProfile: FriendsList = JSON.parse(window.localStorage.getItem('profile'));
+    let countInterest: number = localProfile.interest.length;
+    localProfile.interest.unshift(
       {
-        id: countInterest,
+        id: (countInterest + 1),
         name: interest
       }
     );
-    let localProfile = JSON.parse(window.localStorage.getItem('profile'));
-    window.localStorage.removeItem('profile');
-    localProfile.interest = this.interests;
+    this.interests = localProfile.interest;
     window.localStorage.setItem('profile', JSON.stringify(localProfile));
   }
 }

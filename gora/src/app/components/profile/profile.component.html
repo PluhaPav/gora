@@ -7,39 +7,41 @@
             Добавить в друзья
         </div>
     </div>
-    <div class="contain__column" (click)="clickWrite($event)">
-        <div class="header">
-            <div class="header__name changed">
-                <h1 *ngIf="!write">{{profile.name}}</h1>
-                <input *ngIf="write" [(ngModel)]="profile.name" name="name" type="text" value="{{profile.name}}">
-            </div>
-            <div class="header__city">
-                <span>{{profile.city}}</span>
-            </div>
-        </div>
-        <div class="body">
-            <div class="body__line">
-                <div class="title">
-                    <b>Семейное положение</b>
+    <div class="contain__column">
+        <div (click)="clickWrite($event)">
+            <div class="header">
+                <div class="header__name changed">
+                    <h1 *ngIf="!write">{{profile.name}}</h1>
+                    <input *ngIf="write" [(ngModel)]="profile.name" name="name" type="text" value="{{profile.name}}">
                 </div>
-                <div class="text">холост</div>
-            </div>
-            <div class="body__line">
-                <div class="title">
-                    <b>Телефон</b>
-                </div>
-                <div class="text changed">
-                    <div *ngIf="!write">{{profile.phone}}</div>
-                    <input *ngIf="write" [(ngModel)]="profile.phone" name="phone" type="text" value="{{profile.phone}}">
+                <div class="header__city">
+                    <span>{{profile.city}}</span>
                 </div>
             </div>
-            <div class="body__line">
-                <div class="title">
-                    <b>E-mail</b>
+            <div class="body">
+                <div class="body__line">
+                    <div class="title">
+                        <b>Семейное положение</b>
+                    </div>
+                    <div class="text">холост</div>
                 </div>
-                <div class="text changed">
-                    <div *ngIf="!write">{{profile.email}}</div>
-                    <input *ngIf="write" [(ngModel)]="profile.email" name="email" type="text" value="{{profile.email}}">
+                <div class="body__line">
+                    <div class="title">
+                        <b>Телефон</b>
+                    </div>
+                    <div class="text changed">
+                        <div *ngIf="!write">{{profile.phone}}</div>
+                        <input *ngIf="write" [(ngModel)]="profile.phone" name="phone" type="text" value="{{profile.phone}}">
+                    </div>
+                </div>
+                <div class="body__line">
+                    <div class="title">
+                        <b>E-mail</b>
+                    </div>
+                    <div class="text changed">
+                        <div *ngIf="!write">{{profile.email}}</div>
+                        <input *ngIf="write" [(ngModel)]="profile.email" name="email" type="text" value="{{profile.email}}">
+                    </div>
                 </div>
             </div>
         </div>
